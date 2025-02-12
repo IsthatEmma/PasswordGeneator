@@ -32,9 +32,18 @@ def generate_weaker_password():
     password = word1 + word2
     return password
 
+
 def replaceLetters(word):
     word = word[0].upper() + word[1:]
     if "a"  in word: 
-        word = word.replace("5", "$" "*")
+        word = word.replace("a", "@")
+    if "o"  in word: 
+        word = word.replace("o", "%")
+    if "q"  in word: 
+        word = word.replace("q", "#")
+
+
+
+    
 # replace 3 others letters with numbers or symbols 
     return word
